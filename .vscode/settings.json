@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "Hack NF",
+}
