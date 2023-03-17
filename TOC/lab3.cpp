@@ -10,7 +10,7 @@ void q0(char c)
     if (c == 'a')
         current = 1;
     else
-    	current = -1;
+        current = -1;
 }
 
 void q1(char c)
@@ -18,7 +18,7 @@ void q1(char c)
     if (c == 'a')
         current = 1;
     else if (c == 'b')
-    	current = 2;
+        current = 2;
     else current = -1;
 }
 
