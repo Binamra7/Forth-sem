@@ -1,13 +1,22 @@
 #include<stdio.h>
-#include<conio.h>
+#include<math.h>
 int main()
 {
-	int a;
-	top:
-	printf("enter numbers");
-	scanf("%d",&a);
-	if(a>=1 ||a<=100)
-	goto top;
+	int r,n,arm=0,m;
+	printf("enter a three digit number");
+	scanf("%d",&n);
+	m=n;
+	while(n!=0)
+	{
+		r=n%10;
+		arm=arm+pow(r,3);
+		n=n/10;
+	}
+	if (arm==m)
+	printf("number is armstrong\n");
+	else
+	printf("number is not armstrong\n");
 	return 0;
 	
 }
+
