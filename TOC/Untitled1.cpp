@@ -1,22 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-	int r,n,arm=0,m;
-	printf("enter a three digit number");
-	scanf("%d",&n);
-	m=n;
-	while(n!=0)
+	int i,count=0;
+	char ch[30];
+	printf("enter any string");
+	gets(ch);
+	for(i=0;ch[i]!='\0';i++)
 	{
-		r=n%10;
-		arm=arm+pow(r,3);
-		n=n/10;
+		if(ch[i]==65||ch[i]==97)
+		count=count+1;
 	}
-	if (arm==m)
-	printf("number is armstrong\n");
-	else
-	printf("number is not armstrong\n");
+	printf("no.of repeated a=%d\n",count);
 	return 0;
-	
 }
-
